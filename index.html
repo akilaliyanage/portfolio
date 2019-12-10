@@ -19,6 +19,9 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!--chart js css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+
     <script>
         $(document).ready(function(){
                         $(window).scroll(function(){
@@ -104,6 +107,176 @@
     </div>
 
     <!--profile end-->
+
+    <!--skills-->
+
+    <div class="skills">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2 class="card-title">SKILLS</h2>
+              </div>
+        </div>
+    
+        <div class="row p-2">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                  <div class="card" style="box-shadow: 5px 5px 5px black;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">C</h5>
+                      <canvas id="chart1"></canvas>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                    <div class="card" style="box-shadow: 5px 5px 5px black;">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">C#</h5>
+                        <canvas id="chart2"></canvas>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                      <div class="card" style="box-shadow: 5px 5px 5px black;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">HTML</h5>
+                          <canvas id="chart3"></canvas>
+                        </div>
+                      </div>
+                </div>    
+          </div>
+
+          <div class="row p-2">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                  <div class="card" style="box-shadow: 5px 5px 5px black;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">CSS</h5>
+                      <canvas id="chart4"></canvas>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                    <div class="card" style="box-shadow: 5px 5px 5px black;">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Java Script</h5>
+                        <canvas id="chart5"></canvas>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                      <div class="card" style="box-shadow: 5px 5px 5px black;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">PHP</h5>
+                          <canvas id="chart6"></canvas>
+                        </div>
+                      </div>
+                </div>    
+          </div>
+    </div>
+     
+    <!--skills end-->
+
+    
+
+
+    <!--chart js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+
+    <!--charts-->
+    <script>
+      var c = document.getElementById('chart1').getContext('2d');
+      var mychart = new Chart(c,{
+        type:'pie',
+        data:{
+          labels:['C'],
+          datasets:[{
+            label:'C',
+            data:[70,30],
+            backgroundColor:['#212121']
+          }]
+        },
+        options:{},
+
+      })
+
+      var cs = document.getElementById('chart2').getContext('2d');
+      var mychart = new Chart(cs,{
+        type:'pie',
+        data:{
+          labels:['C#'],
+          datasets:[{
+            label:'C',
+            data:[50,50],
+            backgroundColor:['#263238']
+          }]
+        },
+        options:{},
+
+      })
+
+      var HTML = document.getElementById('chart3').getContext('2d');
+      var mychart = new Chart(HTML,{
+        type:'pie',
+        data:{
+          labels:['HTML'],
+          datasets:[{
+            label:'C',
+            data:[80,20],
+            backgroundColor:['#455A64']
+          }]
+        },
+        options:{},
+
+      })
+
+      var css = document.getElementById('chart4').getContext('2d');
+      var mychart = new Chart(HTML,{
+        type:'pie',
+        data:{
+          labels:['CSS'],
+          datasets:[{
+            label:'C',
+            data:[70,30],
+            backgroundColor:['#607D8B']
+          }]
+        },
+        options:{},
+
+      })
+
+      var js = document.getElementById('chart5').getContext('2d');
+      var mychart = new Chart(js,{
+        type:'pie',
+        data:{
+          labels:['Java Script'],
+          datasets:[{
+            label:'C',
+            data:[60,40],
+            backgroundColor:['#90A4AE']
+          }]
+        },
+        options:{},
+
+      })
+
+      var HTML = document.getElementById('chart6').getContext('2d');
+      var mychart = new Chart(HTML,{
+        type:'pie',
+        data:{
+          labels:['HTML'],
+          datasets:[{
+            label:'C',
+            data:[80,20],
+            backgroundColor:['#455A64']
+          }]
+        },
+        options:{},
+
+      })
+    </script>
+
 
 </body>
 </html>

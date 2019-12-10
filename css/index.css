@@ -46,6 +46,9 @@ body{
 .pp-1{
     margin-top: 240px;   
 }
+.skills{
+    height: 700px;
+}
 
 @media only screen and (max-width:970px){
     .main-head{
