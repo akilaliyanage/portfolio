@@ -46,8 +46,9 @@ body{
 .pp-1{
     margin-top: 240px;   
 }
-.skills{
-    height: 700px;
+
+video{
+    width: 90%;
 }
 
 @media only screen and (max-width:970px){
@@ -69,6 +70,10 @@ body{
 
     .pp-1{
         margin-top: 1px;   
+    }
+
+    video{
+        width: 90%;
     }
 }
 .sec2{
