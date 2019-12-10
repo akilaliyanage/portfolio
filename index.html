@@ -174,6 +174,35 @@
                       </div>
                 </div>    
           </div>
+
+          <div class="row p-2">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                  <div class="card" style="box-shadow: 5px 5px 5px black;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">jQuery</h5>
+                      <canvas id="chart7"></canvas>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                    <div class="card" style="box-shadow: 5px 5px 5px black;">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">React</h5>
+                        <canvas id="chart8"></canvas>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1">
+                      <div class="card" style="box-shadow: 5px 5px 5px black;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Anguler</h5>
+                          <canvas id="chart9"></canvas>
+                        </div>
+                      </div>
+                </div>    
+          </div>
     </div>
      
     <!--skills end-->
@@ -232,7 +261,7 @@
       })
 
       var css = document.getElementById('chart4').getContext('2d');
-      var mychart = new Chart(HTML,{
+      var mychart = new Chart(css,{
         type:'pie',
         data:{
           labels:['CSS'],
@@ -261,15 +290,60 @@
 
       })
 
-      var HTML = document.getElementById('chart6').getContext('2d');
-      var mychart = new Chart(HTML,{
+      var PHP = document.getElementById('chart6').getContext('2d');
+      var mychart = new Chart(PHP,{
         type:'pie',
         data:{
-          labels:['HTML'],
+          labels:['PHP'],
           datasets:[{
             label:'C',
-            data:[80,20],
-            backgroundColor:['#455A64']
+            data:[50,50],
+            backgroundColor:['#424242']
+          }]
+        },
+        options:{},
+
+      })
+
+      var jq = document.getElementById('chart7').getContext('2d');
+      var mychart = new Chart(jq,{
+        type:'pie',
+        data:{
+          labels:['jQuery'],
+          datasets:[{
+            label:'C',
+            data:[30,70],
+            backgroundColor:['#616161']
+          }]
+        },
+        options:{},
+
+      })
+
+      var react = document.getElementById('chart8').getContext('2d');
+      var mychart = new Chart(react,{
+        type:'pie',
+        data:{
+          labels:['React'],
+          datasets:[{
+            label:'C',
+            data:[20,80],
+            backgroundColor:['#37474F']
+          }]
+        },
+        options:{},
+
+      })
+
+      var an = document.getElementById('chart9').getContext('2d');
+      var mychart = new Chart(an,{
+        type:'pie',
+        data:{
+          labels:['Anguler'],
+          datasets:[{
+            label:'C',
+            data:[10,90],
+            backgroundColor:['#757575']
           }]
         },
         options:{},
