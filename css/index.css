@@ -40,9 +40,10 @@ body{
     margin-top: 50px;
 }
 .pp{
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    margin-top: 240px;   
+}
+
+.pp-1{
     margin-top: 240px;   
 }
 
@@ -60,9 +61,11 @@ body{
     }
 
     .pp{
-        margin-left: auto;
-        margin-right: auto;
-        position: relative; 
+        margin-top: 50px;   
+    }
+
+    .pp-1{
+        margin-top: 1px;   
     }
 }
 .sec2{
