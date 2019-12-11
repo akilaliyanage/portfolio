@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-size: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .navbar-scroll{
     transition:500ms ease;
@@ -51,6 +54,16 @@ video{
     width: 90%;
 }
 
+@media only screen and (min-width:971px){
+    .skills{
+        margin-top: 50px;
+    }
+
+    .pro{
+        margin-top: 50px;
+    }
+}
+
 @media only screen and (max-width:970px){
     .main-head{
         font-family: 'Oswald', sans-serif;
@@ -74,6 +87,9 @@ video{
 
     video{
         width: 90%;
+    }
+    .skills{
+        margin-top: 0px;
     }
 }
 .sec2{
